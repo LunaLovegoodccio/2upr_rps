@@ -238,27 +238,7 @@ QVector<int> Calculate::calculate_N(double z,double a,double b)
 
     if(ToolUsing)
     {
-        //vq = vq + e_tool * R * offset; // 刀尖点坐标公式
 
-        //Eigen::Vector3d vq = Eigen::Vector3d(x1, y1, z1) - e_tool * R * Eigen::Vector3d(0, 0, 1);
-        /*
-        double tool_z_translation = e_tool;  // 定义刀尖坐标系相对于动态坐标系在 z 轴上平移的向量
-        Eigen::Matrix4d T = Eigen::Matrix4d::Identity();  // 定义平移矩阵 T
-        T(2, 3) = tool_z_translation;
-
-        // 构建从静态坐标系到刀尖坐标系的坐标转换矩阵
-        Eigen::Matrix4d Transformation = Eigen::Matrix4d::Identity();
-        Transformation.block(0, 0, 3, 3) = R_inv;
-        Transformation(0, 3) = -x;
-        Transformation(1, 3) = -y;
-        Transformation(2, 3) = -z;
-
-        // 将静态坐标系下的点转换为刀尖坐标系原点
-        Eigen::Vector4d vq = T * Transformation * vq0;
-
-        //vq = vq0 + e_tool * R * offset; // 刀尖点坐标公式
-
-*/
 
     }
 
